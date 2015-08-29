@@ -1,0 +1,299 @@
+<html>
+<head>
+
+    
+        <title>Interactive Timeline</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".at").click(function () {
+                    $(".ap").toggle(500);
+                });
+                $(".bt").click(function () {
+                    $(".bp").toggle(500);
+                });
+                $(".ct").click(function () {
+                    $(".cp").toggle(500);
+                });
+                $(".dt").click(function () {
+                    $(".dp").toggle(500);
+                });
+                $(".et").click(function () {
+                    $(".ep").toggle(500);
+                });
+                $(".ft").click(function () {
+                    $(".fp").toggle(500);
+                });
+                $(".gt").click(function () {
+                    $(".gp").toggle(500);
+                });
+                $(".ht").click(function () {
+                    $(".hp").toggle(500);
+                });
+                $(".it").click(function () {
+                    $(".ip").toggle(500);
+                });
+                $(".jt").click(function () {
+                    $(".jp").toggle(500);
+                });
+            });
+        </script>
+<style>
+            body {
+                font-family:helvetica;
+                background:#f0f0f0;
+                font-size:12px;
+                width:100vw;
+                overflow-x:hidden;
+                overflow-y:auto;
+            }
+            p {
+                font-size:12px;
+            }
+            #f {
+                width:100%;
+                overflow:auto;
+                box-sizing: border-box;
+                padding:0px 25px 25px 25px;
+                
+            }
+            #cc {
+                width:100vw;
+                overflow:auto;
+            }
+            #c {
+                overflow:auto;
+                width:2000px;
+                
+            }
+            #timeline {
+                border-bottom:5px solid black;
+                position:relative;
+                margin:0;
+                padding:0;
+            }
+            .p {
+                display:none;
+            }
+            .t {
+                width:200px !important;
+                overflow:visible;
+            }
+            .marker-cont {
+                margin-bottom:-22px;
+                font-size:16px;
+            }
+            .marker {
+                border-radius:100%;
+                padding:8px;
+                border:5px black solid;
+                background:#f0f0f0;
+                display:inline-block;
+                margin-left:6px;
+            }
+            .events td {
+                overflow:visible;
+            }
+            .events table {
+                table-layout: fixed;
+            }
+            .events table td {
+                overflow: visible;
+            }
+            .events {
+                margin-top:10px;
+            }
+            h3 {
+                padding:0;
+                margin:0;
+                margin-top:2px;
+                margin-bottom:2px;
+                font-size:15px;
+            }
+            .red {
+                padding:8px;
+                background:#b05040;
+                color:white;
+                border-radius:3px;
+                display:inline-block;
+                margin:4px;
+            }
+            .blue {
+                padding:8px;
+                background:#4050b0;
+                color:white;
+                border-radius:3px;
+                display:inline-block;
+                margin:4px;
+            }
+            .green {
+                padding:8px;
+                background:#40b050;
+                color:white;
+                border-radius:3px;
+                display:inline-block;
+                margin:4px;
+            }
+            .purple {
+                padding:8px;
+                background:#884088;
+                color:white;
+                border-radius:3px;
+                display:inline-block;
+                margin:4px;
+            }
+            #key {
+                position:relative;
+                display:inline-block;
+                float:right;
+                top:0;
+                right:0;
+                padding:8px;
+                border:3px solid gray;
+                border-radius:3px;
+                margin:20px;
+                background:white;
+            }
+    </style>
+
+</head>
+    <body>
+        <div id="f">
+            <div id="key">
+                 <h3>Key:</h3>
+        
+                <div class="red">legislation</div>
+                <br>
+                <div class="purple">protests and other events</div>
+                <br>
+                <div class="blue">awareness</div>
+                <br>
+                <div class="green">women's rights group</div>
+            </div>
+            
+        <h1>Women's Rights Movement Interactive Timeline</h1>
+        
+            <p>This timeline shows events from the second wave feminist movement, from the 1960's to the 1980's. Click on an item to expand it.</p>
+        </div>
+        <div id="cc">
+        <div id="c">
+        <div id="timeline">
+            <table width="2000px">
+                <tbody><tr>
+                    <td>
+                        <div class="marker-cont">1940
+                            <br>
+                            <div class="marker"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="marker-cont">1950
+                            <br>
+                            <div class="marker"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="marker-cont">1960
+                            <br>
+                            <div class="marker"></div>
+                        </div>
+                    </td>
+                    <td valign="top">
+                        <div class="marker-cont">1970
+                            <br>
+                            <div class="marker"></div>
+                            <br>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="marker-cont">1980
+                            <br>
+                            <div class="marker"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="marker-cont">1990
+                            <br>
+                            <div class="marker"></div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+        <div class="events">
+            <table width="2000px">
+                <tbody><tr>
+                    <td valign="top"></td>
+                    <td valign="top"></td>
+                    <td valign="top">
+                        <div class="blue bt t" style="margin-left:105px">
+                             <h3><i>The Feminine Mystique</i> - 1963</h3>
+        
+                            <p class="bp p" style="display: none;">This book, written by Betty Friedan, encouraged many women to re-examine their socital roles.</p>
+                        </div>
+                        <div class="purple ct t" style="margin-left:140px">
+                             <h3>Freedom House Strike - 1964</h3>
+        
+                            <p class="cp p">During the Civil Rights Movement, many women were forced to serve the male activists of the time. At one civil rights headquarters, the women went on strike and refused to do any cooking or cleaning.</p>
+                        </div>
+                        <div class="red gt t" style="margin-left:245px">
+                             <h3>Executive Order 11375 signed into law - 1967</h3>
+        
+                            <p class="gp p" style="display: none;">Signed by President Johnson, this order banned sex-based discrimination in all government workplaces.</p>
+                        </div>
+                        <div class="purple et t" style="margin-left:280px">
+                             <h3>Radical Women protest the Miss America Pagent - 1968</h3>
+        
+                            <p class="ep p">A feminist group staged a protest in which they threw away bras, girdles, curlers, false eyelashes, and wigs.</p>
+                        </div>
+                        <div class="green ft t" style="margin-left:280px">
+                             <h3>Women's International Terrorist Conspiracy From Hell (WITCH) formed - 1968</h3>
+        
+                            <p class="fp p">The group help many protests for women's rights, including the firing of a feminist teacher and the treatment of women office workers.</p>
+                        </div>
+                        <div class="blue dt t" style="margin-left:315px">
+                             <h3><i>The Political Economy of Women's Liberation</i> - 1969</h3>
+        
+                            <p class="dp p">Author Margaret Benson compared women to servents, as they worked just as hard (if not harder) than their male counterparts, but since the work they did was unpaid, it was considered to have less value.</p>
+                        </div>
+                    </td>
+                    <td valign="top">
+                        <div class="red at t" style="margin-left:105px">
+                             <h3>Roe v. Wade - 1973</h3>
+        
+                            <p class="ap p">This court case gave women the right to an abortion if the pregnancy was still within the first trimester.</p>
+                        </div>
+                        <div class="blue it t" style="margin-left:105px">
+                             <h3><i>Our Bodies, Ourselves</i> - 1973</h3>
+        
+                            <p class="ip p" style="display: none;">This book contained information for women regarding their health and the female reproductive system. Such topics were considered taboo or inapropriate at the time, and as a result, many women knew nothing about their own bodies.</p>
+                        </div>
+                        <div class="green ht t" style="margin-left:245px">
+                             <h3>Antional Organization for Women (NOW) reaches 70,000 members - 1977</h3>
+        
+                            <p class="hp p" style="display: none;">NOW advocated for women's rights, particularly the Equal Rights Amendment.</p>
+                        </div>
+                    </td>
+                    <td valign="top">
+                        <div class="blue jt t" style="margin-left:0px">
+                             <h3>Divorces Double - 1980</h3>
+        
+                            <p class="jp p" style="display: none;">The divorce rates in the US have doubled since 1960. Now, more women feel comfortable leaving an unhappy marriage instead of staying to please their husbands.</p>
+                        </div>
+                        
+                    </td>
+                    <td valign="top"></td>
+                </tr>
+            </tbody></table>
+        </div>
+        </div>
+        </div>
+        <div style="padding:25px">
+        <h3>Sources Used:</h3>
+        <ul>
+            <li><i>A People's History of the United States -- Chapter 19: Surprises</i> by Howard Zinn</li>
+            <li><i>History of the Americas: Course Companion -- Chapter 7: Feminist movements in the Americas</i> by Yvonne Berliner</li>
+        </ul>
+        </div>
+    </body>
+    </html>
